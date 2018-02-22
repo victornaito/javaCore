@@ -34,5 +34,7 @@ public class LambdaTest {
                 return carro.getMarca().equals("Honda");
             }
         }));
+
+        System.out.println(filtrar(list, (Carro carro) -> carro.getMarca().equals("fiat")));
     }
 }
